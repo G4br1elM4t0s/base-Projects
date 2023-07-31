@@ -6,12 +6,12 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts",
+    "start:dev": "nodemon 'src/' --exec 'ts-node src/index.ts' -e ts",
     "husky:prepare": "husky install",
     "test": "jest --passWithNoTests",
     "test:watch": "npm test --watch",
     "test:staged": "npm test --findRelatedTests",
-    "test:push": "npm test --coverage"
+    "test:push": "npm run test --coverage"
   },
   "keywords": [],
   "author": "",
